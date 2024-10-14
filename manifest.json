@@ -1,0 +1,29 @@
+{
+    "name": "Aplikace pro kvadratické rovnice ",         
+    "short_name": "kv-rov-calc",             
+  
+    "icons": [
+      {
+        "src": "/icons/moaobrazek1.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icons/moaobrazek2.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+  
+    "start_url": "/index.html",          
+    "display": "standalone",             
+  
+    "_comment5": "Volitelné položky",
+    "background_color": "#FFFFFF",       
+    "theme_color": "#0000FF",            
+    "description": "Toto je ukázková PWA aplikace.", 
+    "orientation": "portrait",           
+    "scope": "/",                        
+    "lang": "cs-CZ",                     
+    "dir": "ltr"
+  }

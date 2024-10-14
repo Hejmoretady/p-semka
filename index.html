@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <link rel="manifest" href="manifest.json">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Tlak</h1>
+        <p>Síla [N]</p>
+        <input id="F" type="number" placeholder="Síla [N]">
+        <p>Plocha [m^2]</p>
+        <input id="S" type="number" placeholder="Plocha [m^2]">
+        <p>Tlak [Pa]</p>
+        <input id="P" type="number" placeholder="Tlak [Pa]"> <br>
+        <input type="button" value="Vypocitej" onclick="Vypocitej()" >
+        <label hidden="true" id="error" name="errorrrr">Error invalid input</label>
+    </form>
+</body>
+</html>

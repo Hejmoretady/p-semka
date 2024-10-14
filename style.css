@@ -1,0 +1,134 @@
+/* Základní resetování stylů pro prohlížeče */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Celkové stylování těla stránky */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(73, 70, 70);
+
+}
+
+/* Kontejner pro kalkulačku */
+.container {
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0066cc;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 350px;
+}
+
+/* Titulek */
+.title {
+    font-size: 2.5rem;
+    color: #1f3a64;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styly pro formulář a vstupy */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(155, 185, 239);
+}
+
+input, select {
+    padding: 12px;
+    font-size: 1.2rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styl pro zaostření vstupů */
+input:focus, select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.6);
+}
+input {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #0066cc;
+
+}
+
+/* Tlačítko pro výpočet */
+button {
+    background: linear-gradient(135deg, #0066cc, #3399ff);
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3399ff, #0066cc);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styl pro výsledek */
+h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Efekt pro výsledek */
+h2.success {
+    color: #28a745;
+}
+
+h2.error {
+    color: #e74c3c;
+}
+
+/* Responzivní úpravy pro menší obrazovky */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        width: 280px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    input, select, button {
+        font-size: 1rem;
+    }
+}
+#error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6161;
+}
